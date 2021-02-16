@@ -3,7 +3,7 @@ name: "ant CI workflow windows"
 on:
   push:
     # branches: [ $default-branch ]
-    branches: [ feature_githubactions ]
+    branches: [ dev ]
   # pull_request:
   #   branches: [ $default-branch ]
 
