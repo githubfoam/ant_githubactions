@@ -1,4 +1,4 @@
-name: "ant CI workflow"
+name: "ant CI workflow ubuntu"
 
 on:
   push:
