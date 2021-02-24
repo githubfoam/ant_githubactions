@@ -25,7 +25,9 @@ jobs:
     - name: "build from the command line(ant -f)"
       run: ant -f build.xml     
     - name: "build from the command line (ant)"
-      run: ant         
+      run: ant  
+    - name: "build from the command line (ant -noinput -buildfile)"
+      run: ant -noinput -buildfile build.xml               
     # - name: "Build with Ant"
     #   run: ant -noinput -buildfile build.xml     
     # - name: "Run the Ant jar target"
