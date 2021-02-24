@@ -41,5 +41,5 @@ jobs:
         run: ant  
       - name: "build from the command line (ant -noinput -buildfile)"
         run: ant -noinput -buildfile build.xml           
-      # - name: "Setup java"
-      #   run: java -cp java HelloWorldApp        
+      - name: "Setup java"
+        run: java -cp java HelloWorldApp        
