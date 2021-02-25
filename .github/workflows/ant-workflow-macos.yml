@@ -3,7 +3,8 @@ name: "ant CI workflow macos"
 on:
   push:
     branches: [ main ]
-
+  schedule:
+      - cron:  '0 0 1 * *' ##execution of a task in the first minute of the month  
 
 jobs:
   
@@ -18,10 +19,12 @@ jobs:
       with:
         java-version: 1.8
         architecture: x64        
-    - name: "Build with Ant"
-      run: ant -noinput -buildfile build.xml     
-    - name: "Run the Ant jar target"
-      run: ant -noinput -buildfile build-ci.xml jar       
-
-
-     
+    - name: "Verify ant version"
+      run: ant -version
+    - name: "build from the command line(ant -f)"
+      run: ant -f build.xml     
+    - name: "build from the command line (ant)"
+      run: ant  
+    - name: "build from the command line (ant -noinput -buildfile)"
+      run: ant -noinput -buildfile build.xml               
+           
