@@ -2,10 +2,8 @@ name: "ant CI workflow macos"
 
 on:
   push:
-    # branches: [ $default-branch ]
-    branches: [ dev ]
-  # pull_request:
-  #   branches: [ $default-branch ]
+    branches: [ test ]
+
 
 jobs:
   
@@ -28,8 +26,6 @@ jobs:
       run: ant  
     - name: "build from the command line (ant -noinput -buildfile)"
       run: ant -noinput -buildfile build.xml               
-    # - name: "Build with Ant"
-    #   run: ant -noinput -buildfile build.xml     
     - name: "Run the Ant jar target"
       run: ant -noinput -buildfile build-ci.xml jar && ls -lai      
 
