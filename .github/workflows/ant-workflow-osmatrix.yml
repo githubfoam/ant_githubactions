@@ -24,7 +24,7 @@ jobs:
         java: [ 11.0.3, 12, 13 ]
         exclude:
           - os: macos-latest
-            python-version: 12
+            java-version: 12
         #   - os: windows-latest
         #     python-version: 3.6
     steps:
