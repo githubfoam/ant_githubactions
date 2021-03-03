@@ -22,9 +22,9 @@ jobs:
         # test against latest update of each major Java version, as well as specific updates of LTS versions:
         # java: [ 1.6, 6.0.83, 7, 7.0.181, 8, 8.0.192, 9.0.x, 10, 11.0.x, 11.0.3, 12, 13 ]
         java: [ 11.0.3, 12, 13 ]
-        # exclude:
-        #   - os: macos-latest
-        #     python-version: 3.6
+        exclude:
+          - os: macos-latest
+            python-version: 12
         #   - os: windows-latest
         #     python-version: 3.6
     steps:
