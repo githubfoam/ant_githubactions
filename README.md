@@ -5,4 +5,6 @@
 
 [![ant CI workflow ubuntu](https://github.com/githubfoam/ant_githubactions/actions/workflows/ant-workflow-ubuntu.yml/badge.svg?branch=main)](https://github.com/githubfoam/ant_githubactions/actions/workflows/ant-workflow-ubuntu.yml)  
 
-[![ant CI workflow windows](https://github.com/githubfoam/ant_githubactions/actions/workflows/ant-workflow-windows.yml/badge.svg?branch=main)](https://github.com/githubfoam/ant_githubactions/actions/workflows/ant-workflow-windows.yml)
+[![ant CI workflow windows](https://github.com/githubfoam/ant_githubactions/actions/workflows/ant-workflow-windows.yml/badge.svg?branch=main)](https://github.com/githubfoam/ant_githubactions/actions/workflows/ant-workflow-windows.yml)  
+
+[![ant CI workflow OS matrix](https://github.com/githubfoam/ant_githubactions/actions/workflows/ant-workflow-osmatrix.yml/badge.svg?branch=main)](https://github.com/githubfoam/ant_githubactions/actions/workflows/ant-workflow-osmatrix.yml)
