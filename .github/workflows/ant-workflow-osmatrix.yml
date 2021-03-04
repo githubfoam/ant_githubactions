@@ -25,8 +25,8 @@ jobs:
         exclude:
           - os: macos-latest
             java-version: 12
-        #   - os: windows-latest
-        #     python-version: 3.6
+          - os: windows-latest
+            java-version: 12
     steps:
       - uses: actions/checkout@v2
       - name: "Setup java"
